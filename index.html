@@ -1,0 +1,311 @@
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="x-icon" href="img/judflspfptransp.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Machine Orchestra</title>
+
+<style>
+html{
+background-image: url("img/background1.png");
+background-repeat: repeat;
+background-size: 100px;
+image-rendering: pixelated;
+
+}
+
+#header1{
+text-align: center;
+display: block;
+margin: auto;
+margin-top: 20px;
+margin-bottom: 20px;
+width: 50%;
+
+}
+
+#navbar{
+
+text-align: center;
+display: block;
+margin: auto;
+
+width: 50%;
+
+filter: drop-shadow(0 0 10px);
+ transition: transform 0.2s ease, filter 0.2s ease;
+
+}
+
+#navbar img:hover{
+
+   transform: scale(1.1);   
+    filter: brightness(110%);
+ transition: transform 0.2s ease, filter 0.2s ease;
+
+}
+
+#textbox {
+  background-image: url("img/paper background.gif");
+  background-repeat: repeat;
+  background-size: 100px;
+  background-clip: content-box; 
+
+  width: 842px;
+  display: block;
+  margin: auto;
+
+  border-style: solid;
+  border-width: 10px;
+  border-image-source: url("img/paperwallsfilled.png");
+  border-image-slice: 5;
+  border-image-width: 10px;
+  border-image-outset: 0;
+  border-image-repeat: round;
+}
+
+
+#center{
+text-align: center;
+
+margin: auto;
+
+width: 50%;
+
+}
+
+#notbg{
+
+position: relative ;
+
+}
+
+#all{
+position: relative;
+
+}
+
+
+#paratext{
+text-align: center;
+}
+
+#paratext2{
+text-align: center;
+font-size: large;
+}
+
+#volume{
+position: absolute;
+margin: 15px;
+
+}
+
+#rhover{
+  float: right;
+  margin: 20px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed; /* forces equal column widths */
+    border-collapse: collapse;
+  }
+
+  td {
+    width: 33.33%;
+    vertical-align: top; /* keeps lists aligned from the top */
+  }
+
+  
+
+</style>
+
+</head>
+<body>
+    <div id="all">
+
+
+<div id="notbg">
+
+ 
+
+  <audio loop id="audiolooper">
+        <source src="img/Hurricane Supercar(1).wav">
+    </audio>
+
+<img id="volume" src="img/volume.gif" onclick="playAudio()" type="button">
+
+<script>
+var x = document.getElementById("audiolooper"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+
+
+    <img id="header1" src="img/mmo.png">
+
+    <br>
+
+    <div id="navbar">
+     <a href="index.html">   <img src="images/images/asdasda_01.png" href="index.html" alt="Home" height="80px" width="178px"  > </a>
+       <a href="listen.html">     <img src="images/images/asdasda_02.png" href="listen.html" alt="Listen" height="80px" width="178px"  ></a>
+          <a href="shop.html">      <img src="images/images/asdasda_03.png" href="maps.html" alt="Maps" height="80px" width="178px"  ></a>
+            <a href="info.html">        <img src="images/images/asdasda_04.png" href="schedule.html" alt="Schedule" height="80px" width="178px"  ></a>
+                        </div>
+
+
+<div id="textbox">
+<br>
+<h1 id="center" >Follow me on Bandcamp</h1>
+<pre>
+                                          <iframe id="center" scrolling="no" style="border: 0;width: 100%;height: 50px;" src="https://bandcamp.com/band_follow_button_deluxe/774338042"></iframe>
+</pre>
+<br>
+<h1 id="center">Featured albums</h1>
+<br><br>
+<img id="rhover" src="img/cover.png" alt="" height="300">
+<h2 id="paratext">Newest album: <a href="listen.html#unglet">Unglet12</a></h2>
+<p id="paratext2">This is Motor Machine Orchestra's sixth album and was released on January 1, 2026. It is an electronic album with the tags <i>Ambient, Electronic, Experimental, and IDM</i> The total number of tracks is 29, and the total album time is 01:47:33.</p> 
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <ol>
+          <li>Unglet12</li>
+          <li>Spaetehm</li>
+          <li>A Broken Sulface</li>
+          <li>Laurel</li>
+          <li>Richard Henry Landslide III</li>
+          <li>BOC100</li>
+          <li>Cusoewav</li>
+          <li>Clbapples</li>
+          <li>Frehsk</li>
+          <li>The Wrecked Halls And The Newley Shaved</li>
+          <li>Hifley Sloth Tour</li>
+        </ol>
+      </td>
+
+      <td>
+        <ol start="12">
+          <li>Shortbread</li>
+          <li>AutoSleep</li>
+          <li>Gethl</li>
+          <li>Yoktyo Red Rvir</li>
+          <li>Distric Tram</li>
+          <li>Spectrogrami</li>
+          <li>λ</li>
+          <li>μMillt</li>
+          <li>Crossing the Bridge and the Twelve Cans</li>
+          <li>Aright</li>
+          <li>Brian is the Devil playing Guitar</li>
+        </ol>
+      </td>
+
+      <td>
+        <ol start="23">
+          <li>Husband The Newborn Wit</li>
+          <li>Twenty Forth Century Super Smile</li>
+          <li>Doctor Roygbiv and the Eight Dinners</li>
+          <li>Truncated Ponnet Seven &lt; Pangea</li>
+          <li>TsR(sbilia)LbSipiitau[12.2]</li>
+          <li>Bad Bonus Track</li>
+          <li>Coconuts with Aliens</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+
+<img id="rhover" src="img/coverglasse.png" alt="" height="300">
+<h2 id="paratext">Featured album: <a href="listen.html#glass">Glass Eyeball</a></h2>
+<p id="paratext2">This is Motor Machine Orchestra's fifth album and was released on October 31, 2025. It is an electronic album with the tags <i>Ambient, Electronic, Exiperimental, and IDM</i> The total number of tracks is 36, and the total album time is 02:09:06.</p> 
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <ol>
+          <li>Bouncing Houses</li>
+          <li>Murmurs</li>
+          <li>Slupun</li>
+          <li>Stump</li>
+          <li>Hush</li>
+          <li>Roberta1004</li>
+          <li>Windows</li>
+          <li>Sliver</li>
+          <li>Okay</li>
+          <li>Taxi</li>
+          <li>Pkh120d</li>
+        </ol>
+      </td>
+
+      <td>
+        <ol start="12">
+          <li>Saltine</li>
+          <li>Fruitigum Hung up</li>
+          <li>Algoma Waterwall</li>
+          <li>Scuzz</li>
+          <li>I Can Climb</li>
+          <li>win_130</li>
+          <li>Shklinipt</li>
+          <li>Plac Ralph</li>
+          <li>Simon</li>
+          <li>Lp</li>
+          <li>Lemons; Limes</li>
+        </ol>
+      </td>
+
+      <td>
+        <ol start="23">
+          <li>Auth</li>
+          <li>Washcloth</li>
+          <li>Tugenthol</li>
+          <li>Instralamentalathon</li>
+          <li>As The Phone Rings</li>
+          <li>Tennis</li>
+          <li>How Are You?</li>
+          <li>Grinder</li>
+          <li>NW Lullub</li>
+          <li>String Through Needle</li>
+           <li>???4</li>
+        </ol>
+      </td>
+      
+      <td>
+        <ol start="34">
+          <li>Lighter Sunways</li>
+          <li>Sirens</li>
+          <li>Hum</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br><br>
+<h1 id="center">Links</h1>
+<br>
+<table>
+  <tr>
+    <td><a href="https://judefelstead.com">Main Page</a></td>
+     <td><a href="https://motormachineorchestra.bandcamp.com">Bandcamp</a></td>
+       <td><a href="https://youtube.com/@judefelstead">YouTube</a></td>
+       <td><a href="https://open.spotify.com/user/31wq7kkowd3i5odbq7ipgnhvhzc4">Spotify</a></td>
+  </tr>
+</table>
+<br><br>
+</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
