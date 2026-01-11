@@ -120,7 +120,65 @@ table {
       padding: 30px;
   }
 
-  
+    @media (max-width: 768px) {
+
+
+  #navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
+
+  #navbar img {
+
+    max-width: 120px;
+    height: auto;
+    margin: 0;
+  }
+
+  #header1 {
+    width: 90%;
+  }
+
+
+  #textbox {
+    width: 95%;
+    box-sizing: border-box;
+  }
+
+
+  #rhover {
+    float: none;
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+  }
+
+
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  td {
+    margin-bottom: 20px;
+  }
+
+
+  #volume {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    z-index: 1000;
+  }
+}
 
 </style>
 
@@ -195,6 +253,9 @@ New World CD, $9.99</a>
     </div>
 
 </div>
-
+<div id="center">
+  <p style="color:white;">Number of Visitors</p>
+<script type="text/javascript" src="https://counter.websiteout.com/js/2/0/2567/0"></script>
+</div>
 </body>
 </html>
