@@ -1,267 +1,318 @@
 <html lang="en">
+
 <head>
-    <link rel="shortcut icon" type="x-icon" href="img/judflspfptransp.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motor Machine Orchestra</title>
+  <link rel="shortcut icon" type="x-icon" href="img/judflspfptransp.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motor Machine Orchestra</title>
 
-<style>
-html{
-background-image: url("img/background1.png");
-background-repeat: repeat;
-background-size: 100px;
-image-rendering: pixelated;
+  <style>
+    html {
+      background-image: url("img/background1.png");
+      background-repeat: repeat;
+      background-size: 100px;
+      image-rendering: pixelated;
 
-}
+    }
 
-#header1{
-text-align: center;
-display: block;
-margin: auto;
-margin-top: 20px;
-margin-bottom: 20px;
-width: 50%;
+    #header1 {
+      text-align: center;
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 50%;
 
-}
+    }
 
-#navbar{
+    #navbar {
 
-text-align: center;
-display: block;
-margin: auto;
+      text-align: center;
+      display: block;
+      margin: auto;
 
-width: 50%;
+      width: 50%;
 
-filter: drop-shadow(0 0 10px);
- transition: transform 0.2s ease, filter 0.2s ease;
+      filter: drop-shadow(0 0 10px);
+      transition: transform 0.2s ease, filter 0.2s ease;
 
-}
+    }
 
-#navbar img:hover{
+    #navbar img:hover {
 
-   transform: scale(1.1);   
-    filter: brightness(110%);
- transition: transform 0.2s ease, filter 0.2s ease;
+      transform: scale(1.1);
+      filter: brightness(110%);
+      transition: transform 0.2s ease, filter 0.2s ease;
 
-}
+    }
 
-#textbox {
-  background-image: url("img/paper background.gif");
-  background-repeat: repeat;
-  background-size: 100px;
-  background-clip: content-box; 
+    #textbox {
+      background-image: url("img/paper background.gif");
+      background-repeat: repeat;
+      background-size: 100px;
+      background-clip: content-box;
 
-  width: 842px;
-  display: block;
-  margin: auto;
+      width: 842px;
+      display: block;
+      margin: auto;
 
-  border-style: solid;
-  border-width: 10px;
-  border-image-source: url("img/paperwallsfilled.png");
-  border-image-slice: 5;
-  border-image-width: 10px;
-  border-image-outset: 0;
-  border-image-repeat: round;
-}
-
-
-#center{
-text-align: center;
-
-margin: auto;
-
-width: 50%;
-
-}
-
-#notbg{
-
-position: relative ;
-
-}
-
-#all{
-position: relative;
-
-}
+      border-style: solid;
+      border-width: 10px;
+      border-image-source: url("img/paperwallsfilled.png");
+      border-image-slice: 5;
+      border-image-width: 10px;
+      border-image-outset: 0;
+      border-image-repeat: round;
+    }
 
 
-#paratext{
-text-align: center;
-}
+    #center {
+      text-align: center;
 
-#paratext2{
-text-align: center;
-font-size: large;
-}
+      margin: auto;
 
-#volume{
-position: absolute;
-margin: 15px;
+      width: 50%;
 
-}
+    }
 
-#rhover{
-  float: right;
-  margin: 20px;
-}
+    #notbg {
 
-table {
-    width: 100%;
-    table-layout: fixed; /* forces equal column widths */
-    border-collapse: collapse;
-  }
+      position: relative;
 
-  td {
-   margin: 30px;
-  }
+    }
+
+    #all {
+      position: relative;
+
+    }
+
+
+    #paratext {
+      text-align: center;
+    }
+
+    #paratext2 {
+      text-align: center;
+      font-size: large;
+    }
+
+    #volume {
+      position: absolute;
+      margin: 15px;
+
+    }
+
+    #rhover {
+      float: right;
+      margin: 20px;
+    }
+
+    table {
+      width: 100%;
+      table-layout: fixed;
+      /* forces equal column widths */
+      border-collapse: collapse;
+    }
+
+    td {
+      margin: 30px;
+    }
 
     @media (max-width: 768px) {
 
 
-  #navbar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 6px;
-    flex-wrap: nowrap;
-  }
+      #navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        flex-wrap: nowrap;
+      }
 
-  #navbar img {
+      #navbar img {
 
-    max-width: 120px;
-    height: auto;
-    margin: 0;
-  }
+        max-width: 120px;
+        height: auto;
+        margin: 0;
+      }
 
-  #header1 {
-    width: 90%;
-  }
-
-
-  #textbox {
-    width: 95%;
-    box-sizing: border-box;
-  }
+      #header1 {
+        width: 90%;
+      }
 
 
-  #rhover {
-    float: none;
-    display: block;
-    margin: 20px auto;
-    max-width: 80%;
-    height: auto;
-  }
+      #textbox {
+        width: 95%;
+        box-sizing: border-box;
+      }
 
 
-  table,
-  tbody,
-  tr,
-  td {
-    display: block;
-    width: 100%;
-  }
-
-  td {
-    margin-bottom: 20px;
-  }
+      #rhover {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        max-width: 80%;
+        height: auto;
+      }
 
 
-  #volume {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 40px;
-    z-index: 1000;
-  }
-}
+      table,
+      tbody,
+      tr,
+      td {
+        display: block;
+        width: 100%;
+      }
 
-</style>
+      td {
+        margin-bottom: 20px;
+      }
+
+
+      #volume {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 40px;
+        z-index: 1000;
+      }
+    }
+  </style>
 
 </head>
+
 <body>
-    <div id="all">
+  <div id="all">
 
 
-<div id="notbg">
+    <div id="notbg">
 
- 
 
-  <audio loop id="audiolooper">
+
+      <audio loop id="audiolooper">
         <source src="img/Hurricane Supercar(1).wav">
-    </audio>
+      </audio>
 
-<img id="volume" src="img/volume.gif" onclick="playAudio()" type="button">
+      <img id="volume" src="img/volume.gif" onclick="playAudio()" type="button">
 
-<script>
-var x = document.getElementById("audiolooper"); 
+      <script>
+        var x = document.getElementById("audiolooper");
 
-function playAudio() { 
-  x.play(); 
-} 
+        function playAudio() {
+          x.play();
+        }
 
-function pauseAudio() { 
-  x.pause(); 
-} 
-</script>
-
-
-    <img id="header1" src="img/mmo.png">
-
-    <br>
-
-    <div id="navbar">
-    <a href="index.html">   <img src="images/images/asdasda_01.png" href="index.html" alt="Home" height="80px" width="178px"  > </a>
-       <a href="listen.html">     <img src="images/images/asdasda_02.png" href="listen.html" alt="Listen" height="80px" width="178px"  ></a>
-          <a href="shop.html">      <img src="images/images/asdasda_03.png" href="maps.html" alt="Maps" height="80px" width="178px"  ></a>
-            <a href="info.html">        <img src="images/images/asdasda_04.png" href="schedule.html" alt="Schedule" height="80px" width="178px"  ></a>
-                        </div>
+        function pauseAudio() {
+          x.pause();
+        } 
+      </script>
 
 
-<div id="textbox">
+      <img id="header1" src="img/mmo.png">
+
+      <br>
+
+      <div id="navbar">
+        <a href="index.html"> <img src="images/images/asdasda_01.png" href="index.html" alt="Home" height="80px"
+            width="178px"> </a>
+        <a href="listen.html"> <img src="images/images/asdasda_02.png" href="listen.html" alt="Listen" height="80px"
+            width="178px"></a>
+        <a href="shop.html"> <img src="images/images/asdasda_03.png" href="maps.html" alt="Maps" height="80px"
+            width="178px"></a>
+        <a href="info.html"> <img src="images/images/asdasda_04.png" href="schedule.html" alt="Schedule" height="80px"
+            width="178px"></a>
+      </div>
+
+
+      <div id="textbox">
+        <br><br>
+
+        <table id="center">
+          <tr id="center">
+            <td id="center"><h1><a href="#snm">Listen</a></h1></td>
+            <td id="center"><h1><a href="#vid">Watch</a></h1></td>
+          </tr>
+        </table>
 <br><br>
-
-
-<table id="center">
-   <tr>
-        <td id="snm">
-            <h1>Super Nothing Music</h1>
-           <iframe style="border: 0; width: 400px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=1795427192/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/" seamless><a href="https://motormachineorchestra.bandcamp.com/album/super-nothing-music">Super Nothing Music by Motor Machine Orchestra</a></iframe> </td>
-    </tr>
+        <table id="center">
+          <tr>
+            <td id="snm">
+              <h1>Super Nothing Music</h1>
+              <iframe style="border: 0; width: 400px; height: 472px;"
+                src="https://bandcamp.com/EmbeddedPlayer/album=1795427192/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/"
+                seamless><a href="https://motormachineorchestra.bandcamp.com/album/super-nothing-music">Super Nothing
+                  Music by Motor Machine Orchestra</a></iframe>
+            </td>
+          </tr>
+          <tr>
+            <td id="str">
+              <h1>Strangers EP</h1>
+              <iframe style="border: 0; width: 400px; height: 373px;"
+                src="https://bandcamp.com/EmbeddedPlayer/album=1100893808/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/"
+                seamless><a href="https://motormachineorchestra.bandcamp.com/album/strangers-ep">Strangers EP by Motor
+                  Machine Orchestra</a></iframe>
+            </td>
+          </tr>
+          <tr>
+            <td id="unglet">
+              <h1>Unglet12</h1>
+              <iframe style="border: 0; width: 400px; height: 472px;"
+                src="https://bandcamp.com/EmbeddedPlayer/album=1953079631/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/"
+                seamless><a href="https://motormachineorchestra.bandcamp.com/album/unglet12">Unglet12 by Motor Machine
+                  Orchestra</a></iframe>
+            </td>
+          </tr>
+          <tr>
+            <td id="glass">
+              <h1>Glass Eyeball</h1>
+              <iframe style="border: 0; width: 400px; height: 472px;"
+                src="https://bandcamp.com/EmbeddedPlayer/album=2938680628/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/"
+                seamless><a href="https://motormachineorchestra.bandcamp.com/album/glass-eyeball">Glass Eyeball by Motor
+                  Machine Orchestra</a></iframe>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h1>New World</h1>
+              <iframe style="border: 0; width: 400px; height: 439px;"
+                src="https://bandcamp.com/EmbeddedPlayer/album=3618937900/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/"
+                seamless><a href="https://motormachineorchestra.bandcamp.com/album/new-world">New World by Motor Machine
+                  Orchestra</a></iframe>
+            </td>
+          </tr>
+        </table>
+        <br><br>
+        <div id="vid">
+        <div id="center">
+          <h1>'True Noise' From 'Wild Rose Country'</h1>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/P174uqJbL3M?si=JKvHS0dBkNydbo-m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <br>
+          <h1>'Can't Wonder too Far' From 'Strangers EP'</h1>
+         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4tvBrNdk03o?si=geZQDEy3JCG-Nqlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+        <br><br>
+        <h1 id="center">Links</h1>
+<br>
+<table>
   <tr>
-        <td id="str">
-            <h1>Strangers EP</h1>
-            <iframe style="border: 0; width: 400px; height: 373px;" src="https://bandcamp.com/EmbeddedPlayer/album=1100893808/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/" seamless><a href="https://motormachineorchestra.bandcamp.com/album/strangers-ep">Strangers EP by Motor Machine Orchestra</a></iframe>  </td>
-    </tr>
-    <tr>
-        <td id="unglet">
-            <h1>Unglet12</h1>
-            <iframe style="border: 0; width: 400px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=1953079631/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/" seamless><a href="https://motormachineorchestra.bandcamp.com/album/unglet12">Unglet12 by Motor Machine Orchestra</a></iframe>
-        </td>
-    </tr>
-    <tr>
-        <td id="glass">
-            <h1>Glass Eyeball</h1>
-            <iframe style="border: 0; width: 400px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=2938680628/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/" seamless><a href="https://motormachineorchestra.bandcamp.com/album/glass-eyeball">Glass Eyeball by Motor Machine Orchestra</a></iframe> 
-         </td>
-    </tr>
-    <tr>
-        <td>
-            <h1>New World</h1>
-          <iframe style="border: 0; width: 400px; height: 439px;" src="https://bandcamp.com/EmbeddedPlayer/album=3618937900/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/" seamless><a href="https://motormachineorchestra.bandcamp.com/album/new-world">New World by Motor Machine Orchestra</a></iframe> 
-          </td>
-    </tr>
+    <td><a href="https://judefelstead.com">Main Page</a></td>
+     <td><a href="https://motormachineorchestra.bandcamp.com">Bandcamp</a></td>
+       <td><a href="https://youtube.com/@motormachineorchestra">YouTube</a></td>
+       <td><a href="https://open.spotify.com/artist/5fPakwTw1pphrdvSgcdhNs?si=o49aRI-iRnadv_K01DDisQ">Spotify</a></td>
+       <td><a href="https://music.apple.com/us/artist/motor-machine-orchestra/1865795041">Apple Music</a></td>
+  </tr>
 </table>
 <br><br>
-
-</div>
+      </div>
 
     </div>
 
-</div>
-<div id="center">
-  <p style="color:white;">Number of Visitors</p>
-<script type="text/javascript" src="https://counter.websiteout.com/js/2/0/0/0"></script>
-</div>
+  </div>
+  <div id="center">
+    <p style="color:white;">Number of Visitors</p>
+    <script type="text/javascript" src="https://counter.websiteout.com/js/2/0/0/0"></script>
+  </div>
 </body>
+
 </html>
