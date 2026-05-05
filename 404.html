@@ -27,14 +27,28 @@ width: 50%;
 #navbar{
 
 text-align: center;
-display: block;
+display: flex; 
+align-items: center; 
+justify-content: center; 
+gap: 1%;
 margin: auto;
-
-width: 50%;
+width: 90%;
+max-width: 900px;
 
 filter: drop-shadow(0 0 10px);
- transition: transform 0.2s ease, filter 0.2s ease;
+transition: transform 0.2s ease, filter 0.2s ease;
 
+}
+
+#navbar a {
+  flex: 1;
+  max-width: 200px;
+}
+
+#navbar img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 #navbar img:hover{
@@ -67,9 +81,13 @@ filter: drop-shadow(0 0 10px);
 
 #center{
 text-align: center;
-display: block;
-margin: auto;
 
+margin: auto;
+text-align: center;
+display: flex; 
+align-items: center; 
+justify-content: center; 
+width: 50%;
 
 }
 
@@ -106,32 +124,31 @@ margin: 15px;
 }
 
 table {
-    width: 100%;
-    table-layout: fixed; /* forces equal column widths */
-    border-collapse: collapse;
+   text-align: center;
+   margin: auto;
   }
 
-  td {
-    width: 33.33%;
-    vertical-align: top; /* keeps lists aligned from the top */
+  tr {
+   text-align: center;
+   margin: auto;
   }
 
-    @media (max-width: 768px) {
+  td{
+      padding: 30px;
+  }
+
+
+
+  @media (max-width: 768px) {
 
 
   #navbar {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 6px;
-    flex-wrap: nowrap;
+    gap: 0.5%;
   }
 
   #navbar img {
-
-    max-width: 120px;
-    height: auto;
-    margin: 0;
+    max-width: 920px;
   }
 
   #header1 {
@@ -158,8 +175,7 @@ table {
   tbody,
   tr,
   td {
-    display: block;
-    width: 100%;
+margin: 3px;
   }
 
   td {
@@ -173,6 +189,7 @@ table {
     left: 10px;
     width: 40px;
     z-index: 1000;
+    opacity: 0.0;
   }
 }
 

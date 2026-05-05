@@ -27,28 +27,18 @@ width: 50%;
 #navbar{
 
 text-align: center;
+display: block;
+margin: auto;
 display: flex; 
 align-items: center; 
 justify-content: center; 
-gap: 1%;
-margin: auto;
-width: 90%;
-max-width: 900px;
+gap: 10px;
+
+width: 50%;
 
 filter: drop-shadow(0 0 10px);
-transition: transform 0.2s ease, filter 0.2s ease;
+ transition: transform 0.2s ease, filter 0.2s ease;
 
-}
-
-#navbar a {
-  flex: 1;
-  max-width: 200px;
-}
-
-#navbar img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 #navbar img:hover{
@@ -131,30 +121,23 @@ table {
     vertical-align: top;
   }
 
-  #links table {
-   text-align: center;
-   margin: auto;
-  }
-
-  #links tr {
-   text-align: center;
-   margin: auto;
-  }
-
-  #links td{
-      padding: 30px;
-  }
-
   @media (max-width: 768px) {
 
 
   #navbar {
     width: 100%;
-    gap: 0.5%;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+    zoom: 0.7;
   }
 
   #navbar img {
-    max-width: 920px;
+
+    max-width: 120px;
+    height: auto;
+    margin: 0;
   }
 
   #header1 {
@@ -199,10 +182,6 @@ table {
     opacity: 0.0;
   }
 }
-
-marquee {
-  color: white;
-}
 </style>
 
 </head>
@@ -234,6 +213,7 @@ function pauseAudio() {
 
 
     <img id="header1" src="img/mmo.png">
+
     <br>
 
     <div id="navbar">
@@ -371,7 +351,6 @@ function pauseAudio() {
   </tbody>
 </table>
 <br><br>
-<div id="links">
 <h1 id="center">Links</h1>
 <br>
 <table>
@@ -383,7 +362,6 @@ function pauseAudio() {
        <td><a href="https://music.apple.com/us/artist/motor-machine-orchestra/1865795041">Apple Music</a></td>
   </tr>
 </table>
-</div>
 <br><br>
 </div>
 
@@ -397,3 +375,576 @@ function pauseAudio() {
 </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+html{
+background-image: url("img/background1.png");
+background-repeat: repeat;
+background-size: 100px;
+image-rendering: pixelated;
+
+}
+
+#header1{
+text-align: center;
+display: block;
+margin: auto;
+margin-top: 20px;
+margin-bottom: 20px;
+width: 50%;
+
+}
+
+#navbar{
+
+text-align: center;
+display: flex; 
+align-items: center; 
+justify-content: center; 
+gap: 1%;
+margin: auto;
+width: 90%;
+max-width: 900px;
+
+filter: drop-shadow(0 0 10px);
+transition: transform 0.2s ease, filter 0.2s ease;
+
+}
+
+#navbar img:hover{
+
+   transform: scale(1.1);   
+    filter: brightness(110%);
+ transition: transform 0.2s ease, filter 0.2s ease;
+
+}
+
+#textbox {
+  background-image: url("img/paper background.gif");
+  background-repeat: repeat;
+  background-size: 100px;
+  background-clip: content-box; 
+
+  width: 842px;
+  display: block;
+  margin: auto;
+
+  border-style: solid;
+  border-width: 10px;
+  border-image-source: url("img/paperwallsfilled.png");
+  border-image-slice: 5;
+  border-image-width: 10px;
+  border-image-outset: 0;
+  border-image-repeat: round;
+}
+
+
+#center{
+text-align: center;
+
+margin: auto;
+
+width: 50%;
+
+}
+
+#notbg{
+
+position: relative ;
+
+}
+
+#all{
+position: relative;
+
+}
+
+
+#paratext{
+text-align: center;
+}
+
+#paratext2{
+text-align: center;
+font-size: large;
+}
+
+#volume{
+position: absolute;
+margin: 15px;
+
+}
+
+#rhover{
+  float: right;
+  margin: 20px;
+}
+
+table {
+   text-align: center;
+   margin: auto;
+  }
+
+  tr {
+   text-align: center;
+   margin: auto;
+  }
+
+  td{
+      padding: 30px;
+  }
+
+  @media (max-width: 768px) {
+
+
+#navbar {
+    width: 100%;
+    gap: 0.5%;
+  }
+
+  #navbar img {
+    max-width: 920px;
+  }
+
+  #header1 {
+    width: 90%;
+  }
+
+
+  #textbox {
+    width: 95%;
+    box-sizing: border-box;
+  }
+
+
+  #rhover {
+    float: none;
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+  }
+
+
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  td {
+    margin-bottom: 20px;
+  }
+
+
+  #volume {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    z-index: 1000;
+    opacity: 0.0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    html {
+      background-image: url("img/background1.png");
+      background-repeat: repeat;
+      background-size: 100px;
+      image-rendering: pixelated;
+
+    }
+
+    #header1 {
+      text-align: center;
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 50%;
+
+    }
+
+    #navbar {
+
+text-align: center;
+display: block;
+margin: auto;
+display: flex; 
+align-items: center; 
+justify-content: center; 
+gap: 10px;
+
+width: 50%;
+
+filter: drop-shadow(0 0 10px);
+ transition: transform 0.2s ease, filter 0.2s ease;
+
+    }
+
+    #navbar img:hover {
+
+      transform: scale(1.1);
+      filter: brightness(110%);
+      transition: transform 0.2s ease, filter 0.2s ease;
+
+    }
+
+    #textbox {
+      background-image: url("img/paper background.gif");
+      background-repeat: repeat;
+      background-size: 100px;
+      background-clip: content-box;
+
+      width: 842px;
+      display: block;
+      margin: auto;
+
+      border-style: solid;
+      border-width: 10px;
+      border-image-source: url("img/paperwallsfilled.png");
+      border-image-slice: 5;
+      border-image-width: 10px;
+      border-image-outset: 0;
+      border-image-repeat: round;
+    }
+
+
+    #center {
+      text-align: center;
+
+      margin: auto;
+
+      width: 50%;
+
+    }
+
+    #notbg {
+
+      position: relative;
+
+    }
+
+    #all {
+      position: relative;
+
+    }
+
+
+    #paratext {
+      text-align: center;
+    }
+
+    #paratext2 {
+      text-align: center;
+      font-size: large;
+    }
+
+    #volume {
+      position: absolute;
+      margin: 15px;
+
+    }
+
+    #rhover {
+      float: right;
+      margin: 20px;
+    }
+
+    table {
+      width: 100%;
+      table-layout: fixed;
+      /* forces equal column widths */
+      border-collapse: collapse;
+    }
+
+    td {
+      margin: 30px;
+    }
+
+    @media (max-width: 768px) {
+
+
+      #navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        flex-wrap: nowrap;
+      }
+
+      #navbar img {
+
+        max-width: 120px;
+        height: auto;
+        margin: 0;
+      }
+
+      #header1 {
+        width: 90%;
+      }
+
+
+      #textbox {
+        width: 95%;
+        box-sizing: border-box;
+      }
+
+
+      #rhover {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        max-width: 80%;
+        height: auto;
+      }
+
+
+      table,
+      tbody,
+      tr,
+      td {
+        display: block;
+        width: 100%;
+      }
+
+      td {
+        margin-bottom: 20px;
+      }
+
+
+      #volume {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 40px;
+        z-index: 1000;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-image: url("img/background1.png");
+background-repeat: repeat;
+background-size: 100px;
+image-rendering: pixelated;
+
+}
+
+#header1{
+text-align: center;
+display: block;
+margin: auto;
+margin-top: 20px;
+margin-bottom: 20px;
+width: 50%;
+
+}
+
+#navbar{
+
+text-align: center;
+display: block;
+margin: auto;
+display: flex; 
+align-items: center; 
+justify-content: center; 
+gap: 10px;
+
+width: 50%;
+
+filter: drop-shadow(0 0 10px);
+ transition: transform 0.2s ease, filter 0.2s ease;
+
+}
+
+#navbar img:hover{
+
+   transform: scale(1.1);   
+    filter: brightness(110%);
+ transition: transform 0.2s ease, filter 0.2s ease;
+
+}
+
+#textbox {
+  background-image: url("img/paper background.gif");
+  background-repeat: repeat;
+  background-size: 100px;
+  background-clip: content-box; 
+
+  width: 842px;
+  display: block;
+  margin: auto;
+
+  border-style: solid;
+  border-width: 10px;
+  border-image-source: url("img/paperwallsfilled.png");
+  border-image-slice: 5;
+  border-image-width: 10px;
+  border-image-outset: 0;
+  border-image-repeat: round;
+}
+
+
+#center{
+text-align: center;
+
+margin: auto;
+
+width: 50%;
+
+}
+
+#notbg{
+
+position: relative ;
+
+}
+
+#all{
+position: relative;
+
+}
+
+
+#paratext{
+text-align: center;
+}
+
+#paratext2{
+text-align: center;
+font-size: large;
+}
+
+#volume{
+position: absolute;
+margin: 15px;
+
+}
+
+#rhover{
+  float: right;
+  margin: 20px;
+}
+
+table {
+   text-align: center;
+   margin: auto;
+  }
+
+  tr {
+   text-align: center;
+   margin: auto;
+  }
+
+  td{
+      padding: 30px;
+  }
+
+    @media (max-width: 768px) {
+
+
+  #navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
+
+  #navbar img {
+
+    max-width: 120px;
+    height: auto;
+    margin: 0;
+  }
+
+  #header1 {
+    width: 90%;
+  }
+
+
+  #textbox {
+    width: 95%;
+    box-sizing: border-box;
+  }
+
+
+  #rhover {
+    float: none;
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+  }
+
+
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  td {
+    margin-bottom: 20px;
+  }
+
+
+  #volume {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    z-index: 1000;
+  }
+}
